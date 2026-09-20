@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carnet de terrain</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+  :root {
+    --paper: #F2EEE3;
+    --paper-alt: #E9E3D3;
+    --ink: #262A21;
+    --ink-soft: #5B5D4F;
+    --line: #D4CCB6;
+    --forest: #33502F;
+    --forest-ink: #F2EEE3;
+    --bark: #7A5233;
+    --leaf: #66823C;
+    --stone: #79766A;
+    --water: #2E6E8E;
+    --brick: #A2432B;
+    --card-bg: #FBF9F2;
+    --shadow: 0 1px 0 rgba(38,42,33,0.08);
+    --radius: 3px;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1B1C16;
+      --paper-alt: #24261D;
+      --ink: #E8E4D6;
+      --ink-soft: #A7A290;
+      --line: #3B3C31;
+      --forest: #7FA173;
+      --forest-ink: #14170F;
+      --card-bg: #22231B;
+      --shadow: 0 1px 0 rgba(0,0,0,0.4);
